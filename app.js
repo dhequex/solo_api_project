@@ -5,10 +5,9 @@ const app = express();
 
 app.use(express.static("/"));
 
-//app.get( "/", (req, res) =>{
-
-   
-//})
+app.get( "/", (req, res) =>{
+res.send("Hello World")
+});
 
 app.listen(5000, () =>{
 console.log("Listening on port 5000")
